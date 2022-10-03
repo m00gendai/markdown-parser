@@ -6,7 +6,7 @@ And .mdx files are a pain to get working.
 So I created my own parser to transform my custom markdown to valid HTML5.
 It is use case specific so use at your own risk. Will be enhanced on an as-needed basis.
 
-Strings prefixed with `###` get wrapped in `<h1>...</h1>.
+Strings prefixed with `###` get wrapped in `<h1>...</h1>`.
 React components are syntaxed as `<component_name component_prop ... > in the markdown file and are converted to `<component_name prop={...} prop={...} />` depending on the component (hence use case specific).
 Raw HTML is detected based on opening and closing HTML5 tags and is inserted as is: 
 `<div className={s.style}></div>` is inserted as `<div className={s.style}></div>` and `<img src="hello.jpg" />` is inserted as `<img src="hello.jpg" />`.
